@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Slab", serif;
+}
+
+body {
+  max-height: 100vh;
+  height: 100%;
+}
+
+header h2 {
+  color: #050505;
+  font-size: 1.4rem;
+  padding: 20px 10px 10px 40px;
+}
+
+div.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-top: 10rem;
+}
+
+div.image img {
+  width: 450px;
+  height: 350px;
+}
+
+div.grid-info {
+  padding-left: 8em;
+}
+
+div.grid-info h1 {
+  font-size: 2rem;
+  letter-spacing: 5px;
+}
+
+div.grid-info p {
+  color: #7e7e7e;
+  letter-spacing: 2px;
+  line-height: 25px;
+  font-size: 1.1rem;
+  padding-top: 15px;
+}
+
+div.button {
+  padding-top: 25px;
+}
+
+button {
+  padding: 20px 15px;
+  background: #050505;
+  color: #fff;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 3px;
+  border: none;
+}
+
+button:hover {
+  background: #7e7e7e;
+  color: #eee;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8em;
+  color: #050505;
+  font-size: 1rem;
+  padding-bottom: 10px;
+}
+
+@media (max-width: 700px) {
+  div.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-top: 5rem;
+  }
+
+  div.image {
+    display: flex;
+  }
+
+  div.image img {
+    margin: 0 auto;
+    width: 300px;
+    height: 250px;
+  }
+
+  div.grid-info {
+    padding-left: 2em;
+    padding-top: 3em;
+  }
+
+  footer {
+    margin-top: 5em;
+    padding-bottom: 10px;
+  }
+}
